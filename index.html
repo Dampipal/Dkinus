@@ -1,1 +1,23 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open 100 Tabs</title>
+</head>
+<body>
+    <script>
+        // Function to open multiple tabs
+        function openMultipleTabs() {
+            // Loop 100 times to open 100 tabs
+            for (let i = 0; i < 100; i++) {
+                // Generate a unique URL for each tab
+                let url = "https://github.com/Dampipal" + i;
+                // Open the URL in a new tab
+                window.open(url, "_blank");
+            }
+        }
+        
+        // Call the function when the page is loaded
+        window.onload = openMultipleTabs;
+    </script>
+</body>
+</html>
